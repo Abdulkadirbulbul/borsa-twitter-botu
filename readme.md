@@ -98,6 +98,8 @@ python run.py
 
 The script continuously pulls stock market data from [getmidas.com](https://www.getmidas.com/canli-borsa/) and shares updates on Twitter. Switches between the most increasing and decreasing stocks.
 
+![Örnek Çıktı](post.png)
+
 ## Customize
 
 You can customize the script by editing the following variables:
