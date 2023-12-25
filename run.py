@@ -23,9 +23,13 @@ oauth = OAuth1Session(consumer_key, client_secret=consumer_secret)
 try:
     fetch_response = oauth.fetch_request_token(request_token_url)
 except ValueError:
+    print("\033[91m", end="")
     print(
         "There may have been an issue with the consumer_key or consumer_secret you entered."
     )
+    print("\033[0m", end="")
+    
+    exit(1)
 
 resource_owner_key = fetch_response.get("oauth_token")
 resource_owner_secret = fetch_response.get("oauth_token_secret")
