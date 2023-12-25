@@ -1,5 +1,3 @@
-
-
 # Twitter Botu - Borsa Güncellemeleri (TR)
 
 Bu Python kodu, Twitter API ve web kazıma (web scraping) kullanarak gerçek zamanlı borsa güncellemelerini Twitter'da paylaşmaya yarar.
@@ -24,7 +22,7 @@ Scripti çalıştırmadan önce, Twitter API kimlik bilgilerinizi ayarlamanız g
 2. Gerekli Python paketlerini yükleyin:
 
    ```bash
-   pip install requests requests_oauthlib beautifulsoup4
+   pip install -r requirements.txt
    ```
 
 ## Kullanım
@@ -34,6 +32,7 @@ Scripti şu komutla çalıştırın:
 ```bash
 python run.py
 ```
+
 **Yazılım çalıştıkdan sonra terminalde vereceği linke gidip izin verdikten sonraki 6 haneli kodu terminale yapıştırdıkdan sonra sorunsuz çalışacaktır.**
 
 Script, [getmidas.com](https://www.getmidas.com/canli-borsa/) adresinden borsa verilerini sürekli olarak çeker ve Twitter'da güncellemeleri paylaşır. En çok artan ve azalan hisseler arasında geçiş yapar.
@@ -59,7 +58,8 @@ bist50 = "https://www.getmidas.com/canli-borsa/xu050-bist-50-hisseleri"
 
 Projeye katkıda bulunabilir veya herhangi bir sorunla karşılaşırsanız konu açabilirsiniz.
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+
 # Twitter Bot - Stock Market Updates (EN)
 
 This Python code allows you to share real-time stock market updates on Twitter using the Twitter API and web scraping.
@@ -77,15 +77,15 @@ Before running the script, you need to set your Twitter API credentials. Create 
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/Abdulkadirbulbul/borsa-twitter-botu.git
-    ```
+   ```bash
+   git clone https://github.com/Abdulkadirbulbul/borsa-twitter-botu.git
+   ```
 
 2. Install the required Python packages:
 
-    ```bash
-    pip install requests requests_oauthlib beautifulsoup4
-    ```
+   ```bash
+   pip install requests requests_oauthlib beautifulsoup4
+   ```
 
 ## Use
 
@@ -94,6 +94,7 @@ Run the script with this command:
 ```bash
 python run.py
 ```
+
 **After the software runs, go to the link given in the terminal, give permission and paste the next 6-digit code into the terminal, it will work without any problems.**
 
 The script continuously pulls stock market data from [getmidas.com](https://www.getmidas.com/canli-borsa/) and shares updates on Twitter. Switches between the most increasing and decreasing stocks.
