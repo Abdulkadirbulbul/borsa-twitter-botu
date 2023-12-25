@@ -38,9 +38,11 @@ python run.py
 
 Script, [getmidas.com](https://www.getmidas.com/canli-borsa/) adresinden borsa verilerini sürekli olarak çeker ve Twitter'da güncellemeleri paylaşır. En çok artan ve azalan hisseler arasında geçiş yapar.
 
+![Örnek Çıktı](post.png)
+
 ## Özelleştirme
 
-Skripti şu değişkenleri düzenleyerek özelleştirebilirsiniz:
+Scripti şu değişkenleri düzenleyerek özelleştirebilirsiniz:
 
 Gerekirse kazıma URL'lerini ayarlayın:
 
