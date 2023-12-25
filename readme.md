@@ -84,7 +84,7 @@ Before running the script, you need to set your Twitter API credentials. Create 
 2. Install the required Python packages:
 
    ```bash
-   pip install requests requests_oauthlib beautifulsoup4
+   pip install -r requirements.txt
    ```
 
 ## Use
