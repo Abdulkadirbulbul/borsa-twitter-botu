@@ -3,11 +3,25 @@ import json
 import requests
 from bs4 import BeautifulSoup
 import time
+from decouple import config
 
-consumer_key = 'consumer_keyiniz'
-consumer_secret = 'consumer_secretiniz'
-access_token='access_tokeniniz'
-access_token_secret='access_token_secretiniz'
+consumer_key = config("CONSUMER_KEY")
+consumer_secret = config("CONSUMER_SECRET")
+access_token= config("ACCESS_TOKEN")
+access_token_secret= config("ACCESS_TOKEN_SECRET")
+
+if consumer_key == "" or consumer_secret == "" or access_token == "" or access_token_secret == "":
+    print("\033[91m", end="")
+    print("""
+        You need to set your CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, and ACCESS_TOKEN_SECRET.
+        You can do this by creating a .env file and adding the following lines of code:
+        CONSUMER_KEY='<your_consumer_key>'
+        CONSUMER_SECRET='<your_consumer_secret>'
+        ACCESS_TOKEN='<your_access_token>'
+        ACCESS_TOKEN_SECRET='<your_access_token_secret>'
+        """)
+    print("\033[0m", end="")
+    exit(1)
 
 # In your terminal please set your environment variables by running the following lines of code.
 # export 'CONSUMER_KEY'='<your_consumer_key>'
